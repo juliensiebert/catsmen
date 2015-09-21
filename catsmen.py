@@ -4,7 +4,7 @@ import eventloop as el
 import const
 
 class CursorSprite(pygame.sprite.Sprite):
-  """ class for circle sprites """
+  """ class for cursor sprites """
   def __init__(self, image, x, y, w, h):
     pygame.sprite.Sprite.__init__(self)
     self.image = pygame.image.load(image).convert()
@@ -82,7 +82,7 @@ class Grid():
     self.sprites = pygame.sprite.Group()
     self.cats_P1 = pygame.sprite.Group()
     self.cats_P2 = pygame.sprite.Group()
-    self.circles = pygame.sprite.Group()
+    self.cursors = pygame.sprite.Group()
     ## Sprites files
     self.box_path = 'img/cardbox/'
     self.box_filenames = ['box_48px_001.png',
@@ -97,8 +97,8 @@ class Grid():
                           'box_48px_010.png']
     self.cat_path = 'img/cats/'
     self.cat_filenames = ['catL.png', 'catR.png']
-    self.circle_path = 'img/cursor/'
-    self.circle_filenames = ['cursor48.png']
+    self.cursor_path = 'img/cursor/'
+    self.cursor_filenames = ['cursor48.png']
     self.create_sprites()
 
 
@@ -153,12 +153,16 @@ class Grid():
     """ create sprites: cardboxes, cats P1 and cats P2 """
     # list cardboxes coordinates (usefull for cats sprites)
     box_coords = []
+    # choose the number of boxes in each column (let at least 2 holes)
+    nb_boxes = [random.randint(2, self.rows - 2) for i in range(self.cols/2 - 1)]
+    nb_boxes = [2] + nb_boxes + (self.cols % 2) * [random.randint(2, self.rows - 2)] + nb_boxes[-1::-1] + [2]
+    assert len(nb_boxes) == self.cols, "%d,%d,%s" %(len(nb_boxes), self.cols, map(str,nb_boxes))
     # iterate over all columns
     for index in range(self.cols):
       # compute x coordinate (left coordinate of Rect)
       x = index * self.cell_size_px
-      # randomly choose the nb of blocks to add in this column (let at least 2 holes)
-      nb_blocks = random.randint(2, self.rows - 2)
+      # nb of blocks to add in this column
+      nb_blocks = nb_boxes[index]
       # randomly choose the block images
       list_imgs = [random.choice(self.box_filenames) for i in range(nb_blocks)]
       # randomly choose the blocks rows number (y coordinates)
@@ -211,12 +215,12 @@ class Grid():
       self.cats_P2.add(cat_sprite)
 
 
-    circle = CursorSprite(image = self.circle_path + self.circle_filenames[0],
+    cursor = CursorSprite(image = self.cursor_path + self.cursor_filenames[0],
                           x = self.xmin + self.xmax / 2,
                           y = self.ymax + 60,
                           w = 24,
                           h = 24)
-    self.circles.add(circle)
+    self.cursors.add(cursor)
 
 
   def up(self,index):
@@ -295,7 +299,7 @@ class ScoreItem(pygame.font.Font):
 
 
 class Game(el.EventLoop):
-  def __init__(self,w,h,nb,cell_size_px):
+  def __init__(self,w,h,nb,cell_size_px,name_p1="P1",name_p2="P2",starting_player=1):
 
     super(Game, self).__init__()
 
@@ -304,22 +308,36 @@ class Game(el.EventLoop):
 
     self.screen = pygame.display.set_mode((self.width,self.height))
     self.clock = pygame.time.Clock()
-    pygame.display.set_caption("Game Window")
+    pygame.display.set_caption("Catsmen Game Window")
 
     #self.create_background()
 
     self.score_p1 = 0
     self.score_p2 = 0
 
-    self.si_p1 = ScoreItem(self.score_p1, const.FONT, const.FONT_SIZE, const.WHITE, (cell_size_px / 2, cell_size_px / 2))
-    self.si_p2 = ScoreItem(self.score_p2, const.FONT, const.FONT_SIZE, const.WHITE, (self.width - cell_size_px / 2, cell_size_px / 2))
+    self.name_p1 = name_p1
+    self.name_p2 = name_p2
+
+    max_len_score = const.FONT_SIZE * (max(len(name_p1),len(name_p2)) + len(str(nb)) + 1)
+
+
+    self.si_p1 = ScoreItem("%s:%d" %(self.name_p1, self.score_p1),
+                            const.FONT,
+                            const.FONT_SIZE,
+                            const.WHITE,
+                            (max_len_score , cell_size_px / 2))
+    self.si_p2 = ScoreItem("%s:%d" %(self.name_p2, self.score_p2),
+                            const.FONT,
+                            const.FONT_SIZE,
+                            const.WHITE,
+                            (self.width - max_len_score, cell_size_px / 2))
 
     self.w = w
     self.h = h
     self.nb = nb
     self.grid = Grid(nb_rows = h, nb_cols = w, nb_cats = nb, cell_size_px = cell_size_px)
 
-    self.current_player = self.choose_starting_player()
+    self.current_player = starting_player
     self.winner = ''
 
     self.update_cats()
@@ -327,8 +345,12 @@ class Game(el.EventLoop):
 
     self.update_score()
 
-    self.current_col_id = 0
-    self.last_col = -1
+    if self.current_player == 1:
+        self.current_col_id = -1
+    else:
+        self.current_col_id = 0
+
+    self.last_col = None
     self.cols = self.get_authorized_cols()
     self.update_cursor()
 
@@ -344,28 +366,30 @@ class Game(el.EventLoop):
     if self.score_p1 == self.nb and self.score_p2 == self.nb:
       return 'eq'
     elif self.score_p1 == self.nb:
-      return 'p1'
+      return self.name_p1
     elif self.score_p2 == self.nb:
-      return 'p2'
+      return self.name_p2
     else:
       return 'no one'
 
 
-  def choose_starting_player(self):
-    """ randomly choose between P1 and P2"""
-    return random.randint(1,2)
+  # def choose_starting_player(self):
+  #   """ randomly choose between P1 and P2"""
+  #   return random.randint(1,2)
 
 
   def change_player(self):
     """ change player """
     if self.current_player == 1:
       self.current_player = 2
+      self.current_col_id = 0
     else:
       self.current_player = 1
+      self.current_col_id = -1
 
     self.cols = self.get_authorized_cols()
-    self.current_col_id = 0
-    col_index = self.cols[self.current_col_id]
+    # self.current_col_id = 0
+    # col_index = self.cols[self.current_col_id]
     self.update_cursor()
 
 
@@ -383,10 +407,10 @@ class Game(el.EventLoop):
     self.screen.fill((0,0,0))
     # Draw all the spites
     self.grid.sprites.draw(self.screen)
-    self.grid.circles.draw(self.screen)
+    self.grid.cursors.draw(self.screen)
     # Draw the scores
-    self.screen.blit(self.si_p1.label, self.si_p1.position)
-    self.screen.blit(self.si_p2.label, self.si_p2.position)
+    self.screen.blit(self.si_p1.label, (self.si_p1.pos_x - self.si_p1.width/2, self.si_p1.pos_y))
+    self.screen.blit(self.si_p2.label, (self.si_p2.pos_x - self.si_p2.width/2, self.si_p2.pos_y))
     # Go ahead and update the screen with what we've drawn.
     #pygame.display.flip()
     pygame.display.update()
@@ -406,14 +430,14 @@ class Game(el.EventLoop):
 
 
   def update_score(self):
-    self.si_p1.update(str(self.score_p1))
-    self.si_p2.update(str(self.score_p2))
+    self.si_p1.update("%s:%d" %(self.name_p1, self.score_p1))
+    self.si_p2.update("%s:%d" %(self.name_p2, self.score_p2))
 
 
   def update_cursor(self):
     """ update the cursor """
     col_index = self.cols[self.current_col_id]
-    self.grid.circles.update(self.grid.get_x(col_index))
+    self.grid.cursors.update(self.grid.get_x(col_index))
 
 
   def update_cats(self, i=0):

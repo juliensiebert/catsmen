@@ -37,7 +37,7 @@ class MenuItem(pygame.font.Font):
 
 class GameMenu(el.EventLoop):
     def __init__(self, screen, items, bg_color=const.BLACK, font=const.FONT, font_size=const.FONT_SIZE,
-                 font_color=const.WHITE):
+                 font_color=const.WHITE, font_color_selected=const.RED):
         ## initiate parent class
         super(GameMenu, self).__init__()
 
@@ -47,6 +47,9 @@ class GameMenu(el.EventLoop):
 
         self.bg_color = bg_color
         self.clock = pygame.time.Clock()
+
+        self.font_color_selected = font_color_selected
+        self.font_color = font_color
 
         self.items = []
         for index, item in enumerate(items):
@@ -64,7 +67,7 @@ class GameMenu(el.EventLoop):
 
         self.cur_item = 0
         self.items[self.cur_item].set_italic(True)
-        self.items[self.cur_item].set_font_color(const.RED)
+        self.items[self.cur_item].set_font_color(self.font_color_selected)
 
     def set_keyboard_selection(self, key):
         """
@@ -73,7 +76,7 @@ class GameMenu(el.EventLoop):
         for item in self.items:
             # Return all to neutral
             item.set_italic(False)
-            item.set_font_color(const.WHITE)
+            item.set_font_color(self.font_color)
 
         # Find the chosen item
         if key == pygame.K_UP and \
@@ -90,7 +93,7 @@ class GameMenu(el.EventLoop):
             self.cur_item = 0
 
         self.items[self.cur_item].set_italic(True)
-        self.items[self.cur_item].set_font_color(const.RED)
+        self.items[self.cur_item].set_font_color(self.font_color_selected)
 
 
     def run(self):
