@@ -82,7 +82,8 @@ class Grid():
     self.sprites = pygame.sprite.Group()
     self.cats_P1 = pygame.sprite.Group()
     self.cats_P2 = pygame.sprite.Group()
-    self.cursors = pygame.sprite.Group()
+    self.current_cursor = pygame.sprite.GroupSingle()
+    self.cursors = []
     ## Sprites files
     self.box_path = 'img/cardbox/'
     self.box_filenames = ['box_48px_001.png',
@@ -98,7 +99,7 @@ class Grid():
     self.cat_path = 'img/cats/'
     self.cat_filenames = ['catL.png', 'catR.png']
     self.cursor_path = 'img/cursor/'
-    self.cursor_filenames = ['cursor48.png']
+    self.cursor_filenames = ['arrow_blue.png','arrow_red.png']
     self.create_sprites()
 
 
@@ -154,8 +155,8 @@ class Grid():
     # list cardboxes coordinates (usefull for cats sprites)
     box_coords = []
     # choose the number of boxes in each column (let at least 2 holes)
-    nb_boxes = [random.randint(2, self.rows - 2) for i in range(self.cols/2 - 1)]
-    nb_boxes = [2] + nb_boxes + (self.cols % 2) * [random.randint(2, self.rows - 2)] + nb_boxes[-1::-1] + [2]
+    nb_boxes = [random.randint(3, self.rows - 2) for i in range(self.cols/2 - 1)]
+    nb_boxes = [2] + nb_boxes + (self.cols % 2) * [random.randint(4, self.rows - 2)] + nb_boxes[-1::-1] + [2]
     assert len(nb_boxes) == self.cols, "%d,%d,%s" %(len(nb_boxes), self.cols, map(str,nb_boxes))
     # iterate over all columns
     for index in range(self.cols):
@@ -214,13 +215,14 @@ class Grid():
       self.sprites.add(cat_sprite)
       self.cats_P2.add(cat_sprite)
 
-
-    cursor = CursorSprite(image = self.cursor_path + self.cursor_filenames[0],
+    # add cursor sprite to the list
+    for cf in self.cursor_filenames:
+      cursor = CursorSprite(image = self.cursor_path + cf,
                           x = self.xmin + self.xmax / 2,
                           y = self.ymax + 60,
                           w = 24,
                           h = 24)
-    self.cursors.add(cursor)
+      self.cursors.append(cursor)
 
 
   def up(self,index):
@@ -303,6 +305,8 @@ class Game(el.EventLoop):
 
     super(Game, self).__init__()
 
+    pygame.mixer.music.load('sound/bell.ogg')
+
     self.width = (w+2)*cell_size_px
     self.height = (h+4)*cell_size_px
 
@@ -341,17 +345,20 @@ class Game(el.EventLoop):
     self.winner = ''
 
     self.update_cats()
-    self.draw()
 
     self.update_score()
 
-    if self.current_player == 1:
-        self.current_col_id = -1
-    else:
+    if self.current_player:
+        ## current player is P2, one shall put the cursot to the most left P2 cat
         self.current_col_id = 0
+    else:
+        ## current player is P1, one shall put the cursor to the most right P1 cat
+        self.current_col_id = -1
 
+    ## Create cursors
     self.last_col = None
     self.cols = self.get_authorized_cols()
+    self.grid.current_cursor.add(self.grid.cursors[self.current_player])
     self.update_cursor()
 
     self.draw()
@@ -373,32 +380,23 @@ class Game(el.EventLoop):
       return 'no one'
 
 
-  # def choose_starting_player(self):
-  #   """ randomly choose between P1 and P2"""
-  #   return random.randint(1,2)
-
 
   def change_player(self):
     """ change player """
-    if self.current_player == 1:
-      self.current_player = 2
-      self.current_col_id = 0
+    if self.current_player:
+        ## current player is P2, one shall put the cursot to the most left P2 cat
+        self.current_col_id = 0
+        self.current_player = 0
     else:
-      self.current_player = 1
-      self.current_col_id = -1
+        ## current player is P1, one shall put the cursor to the most right P1 cat
+        self.current_col_id = -1
+        self.current_player = 1
 
     self.cols = self.get_authorized_cols()
-    # self.current_col_id = 0
-    # col_index = self.cols[self.current_col_id]
+    self.grid.current_cursor.add(self.grid.cursors[self.current_player])
     self.update_cursor()
 
 
-  #def create_background(self):
-    #""" Fill background """
-    #self.background = pygame.Surface(self.screen.get_size())
-    #self.background = self.background.convert()
-    #self.background.fill(pygame.Color("white"))
-    #self.screen.blit(self.background, (0,0))
 
   def draw(self):
     """ Clear the screen and draw all the sprites """
@@ -407,7 +405,7 @@ class Game(el.EventLoop):
     self.screen.fill((0,0,0))
     # Draw all the spites
     self.grid.sprites.draw(self.screen)
-    self.grid.cursors.draw(self.screen)
+    self.grid.current_cursor.draw(self.screen)
     # Draw the scores
     self.screen.blit(self.si_p1.label, (self.si_p1.pos_x - self.si_p1.width/2, self.si_p1.pos_y))
     self.screen.blit(self.si_p2.label, (self.si_p2.pos_x - self.si_p2.width/2, self.si_p2.pos_y))
@@ -418,12 +416,15 @@ class Game(el.EventLoop):
 
   def get_authorized_cols(self):
     cols = []
-    if self.current_player == 1:
-      cols = set(self.grid.get_cols_P1())
-    else:
+    if self.current_player:
+      ## current player is P2
       cols = set(self.grid.get_cols_P2())
+    else:
+      ## current player is P1
+      cols = set(self.grid.get_cols_P1())
 
     if self.last_col in cols and len(cols) > 1:
+      ## check that we cannot reuse the previously used column
       cols = cols - {self.last_col}
 
     return sorted(list(cols))
@@ -437,7 +438,7 @@ class Game(el.EventLoop):
   def update_cursor(self):
     """ update the cursor """
     col_index = self.cols[self.current_col_id]
-    self.grid.cursors.update(self.grid.get_x(col_index))
+    self.grid.current_cursor.update(self.grid.get_x(col_index))
 
 
   def update_cats(self, i=0):
@@ -446,18 +447,18 @@ class Game(el.EventLoop):
     if i < 5:
 
       ## check which player is currently playing
-      if self.current_player == 1:
-        # update cats of P1 then cats of P2
-        for cat in self.grid.get_sprites_P1():
-          self.update_cat_P1(cat)
+      if self.current_player:
+        # current player is P2, update cats of P2 then cats of P1
         for cat in self.grid.get_sprites_P2():
-          self.update_cat_P2(cat)
+            self.update_cat_P2(cat)
+        for cat in self.grid.get_sprites_P1():
+            self.update_cat_P1(cat)
       else:
-        # update cats of P2 then cats of P1
-        for cat in self.grid.get_sprites_P2():
-          self.update_cat_P2(cat)
+        # Current player is P1, update cats of P1 then cats of P2
         for cat in self.grid.get_sprites_P1():
           self.update_cat_P1(cat)
+        for cat in self.grid.get_sprites_P2():
+          self.update_cat_P2(cat)
 
       ## check if some cats needs to be updated
       if len(self.grid.get_updatable_sprites_P1()) > 0 or len(self.grid.get_updatable_sprites_P2()) > 0:
@@ -529,6 +530,8 @@ class Game(el.EventLoop):
             self.update_cursor()
             self.draw()
           if event.key == pygame.K_UP:
+            # play sound
+            pygame.mixer.music.play(0)
             # update + affichage
             col = self.get_authorized_cols()[self.current_col_id]
             self.grid.up(col)
@@ -540,6 +543,8 @@ class Game(el.EventLoop):
             self.change_player()
             self.draw()
           if event.key == pygame.K_DOWN:
+            # play sound
+            pygame.mixer.music.play(0)
             # update + affichage
             col = self.get_authorized_cols()[self.current_col_id]
             self.grid.down(col)
