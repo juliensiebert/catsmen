@@ -7,6 +7,7 @@ import display
 import catsmen
 import random
 import json
+import const
 
 
 def run_game(starting_player):
@@ -18,21 +19,28 @@ def run_game(starting_player):
 
     ## Save scores
     win = g.get_winner()
-    ## load file
-    with open('scores.json','r') as inputfile:
-        scores = json.load(inputfile)
-    ## update scores
-    scores[win]["vic"] += 1
-    scores[g.name_p1]["cat"] += g.score_p1
-    scores[g.name_p2]["cat"] += g.score_p2
-    ## save to file
-    with open('scores.json', 'w') as outfile:
-        json.dump(scores, outfile)
 
-    ## Display Winner Menu
-    pygame.display.set_caption('Hooray %s Wins' %(win))
-    gm = display.GameDisplay(screen, ['%s Wins the game' %(win)])
-    _ = gm.run()
+    if win not in [0,1]:
+        ## load file
+        with open('scores.json','r') as inputfile:
+            scores = json.load(inputfile)
+        ## update scores
+        scores[win]["vic"] += 1
+        scores[g.name_p1]["cat"] += g.score_p1
+        scores[g.name_p2]["cat"] += g.score_p2
+        ## save to file
+        with open('scores.json', 'w') as outfile:
+            json.dump(scores, outfile)
+
+        ## Display Winner Menu
+        pygame.display.set_caption('Hooray %s Wins' %(win))
+        gm = display.GameDisplay(screen, ['%s Wins the game' %(win)])
+        _ = gm.run()
+    elif win == 1:
+        ## Display Winner Menu
+        pygame.display.set_caption('Nobody Wins??')
+        gm = display.GameDisplay(screen, ['Really?? THat shall not be possible'])
+        _ = gm.run()
 
 def display_scores():
     """ display scores """
@@ -74,6 +82,20 @@ def reset_scores():
         with open('scores.json', 'w') as outfile:
             json.dump(scores, outfile)
 
+def choose_color(player):
+    """ choose color of the current player
+    player in [0,1]
+    """
+    ## Display confirm menu
+    pygame.display.set_caption('Choose color of player %d' %(player+1))
+    colors = ['Blue', 'Brown', 'Green', 'Orange', 'Red', 'Taupe', 'Violet', 'Yellow']
+    gm = menu.GameMenu(screen, colors)
+    chosen_color = gm.run()
+
+    if player == 0:
+        const.SPRITE_P1 = 'cat_R_%s.png' %(colors[chosen_color].lower())
+    else:
+        const.SPRITE_P2 = 'cat_L_%s.png' %(colors[chosen_color].lower())
 
 if __name__ == "__main__":
     pygame.init()
@@ -114,13 +136,16 @@ if __name__ == "__main__":
         elif menu_items[choice] == 'Options':
             ## Display Options Menu
             pygame.display.set_caption('Catsmen Options')
-            options_items = [ 'Reset scores', 'Back']
+            options_items = [ 'Color Player 1', 'Color Player 2', 'Reset scores', 'Back']
             gm = menu.GameMenu(screen, options_items)
             option_choice = gm.run()
 
             if options_items[option_choice] == 'Reset scores':
                 reset_scores()
-
+            elif options_items[option_choice] == 'Color Player 1':
+                choose_color(0)
+            elif options_items[option_choice] == 'Color Player 2':
+                choose_color(1)
 
         elif menu_items[choice] == 'Quit':
             pygame.quit()

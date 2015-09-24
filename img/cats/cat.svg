@@ -28,9 +28,9 @@
      inkscape:window-height="776"
      id="namedview4"
      showgrid="false"
-     inkscape:zoom="7.0222635"
-     inkscape:cx="16.027202"
-     inkscape:cy="28.560312"
+     inkscape:zoom="7.5871146"
+     inkscape:cx="-17.401032"
+     inkscape:cy="41.092461"
      inkscape:window-x="65"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
@@ -80,307 +80,338 @@
        vertical="true"
        bendpath-nodetypes="csc" />
   </defs>
-  <rect
-     style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-     id="rect3101-7"
-     width="48"
-     height="48"
-     x="0.42440805"
-     y="-0.20436838"
-     inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/catR.png"
-     inkscape:export-xdpi="90"
-     inkscape:export-ydpi="90" />
-  <path
-     sodipodi:nodetypes="ccccccccsccccccccccccccsccccccc"
-     inkscape:connector-curvature="0"
-     style="fill:#916f6f;stroke:#241c1c;stroke-width:1.23269761000000000;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
-     d="m 45.567779,11.32063 c -0.67275,0.02654 -1.00157,0.03852 -1.00157,0.03852 0,0 -2.32884,0.01171 -3.00157,0.03852 -0.68022,0.03936 -1.20419,0.686866 -1.19417,1.463828 l 0.077,6.047922 c -0.069,2.023222 -0.22515,4.01088 -0.53931,5.932358 -0.30582,1.689734 -0.58475,3.23428 -1.27121,4.352963 -0.41049,0.784578 -1.136179,1.513066 -1.964619,2.272787 -0.7077,-0.137353 -1.31673,-0.643796 -2.93079,-0.770436 -4.55716,-0.357562 -13.71376,0 -13.71376,0 l 0,7.28062 c 0,0 0.20431,0.144555 0.26965,0.192609 l 0,8.937054 2.58097,0 2.3113,0 2.58096,0 0,-4.738178 c 1.62799,0.404772 3.3756,0.359842 5.04636,0.154087 l 0,4.545571 4.89227,0 2.426869,0 0,-6.66427 c 0.0395,-0.03802 0.0773,-0.0759 0.11557,-0.115565 1.20102,-1.244761 1.34826,-2.060548 1.34826,-5.007834 0,-0.141449 -0.028,-0.253656 -0.0385,-0.385218 1.04043,-0.958537 2.06794,-2.075531 2.92766,-3.505484 1.08666,-1.979057 1.54981,-4.020983 1.81052,-5.855314 0.35148,-2.21904 0.50986,-4.419006 0.57783,-6.587228 l -0.077,-6.240531 c -0.0103,-0.799994 -0.55215,-1.401463 -1.23269,-1.386785 z"
-     id="path3148"
-     inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/catR.png"
-     inkscape:export-xdpi="90"
-     inkscape:export-ydpi="90" />
-  <path
-     sodipodi:nodetypes="zzacz"
-     inkscape:connector-curvature="0"
-     id="path4462-1"
-     d="m 31.851131,38.895246 c -2.436382,0 -4.080959,1.119053 -4.080959,2.426614 0,1.307561 2.370808,1.005026 3.610662,0.925081 1.644021,-0.106005 4.601655,-0.527837 4.59049,-1.831336 -0.992936,-0.850372 -1.683811,-1.520359 -4.120193,-1.520359 z"
-     style="fill:#e3dbdb;fill-opacity:0.50196078;fill-rule:nonzero;stroke:none"
-     inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/catR.png"
-     inkscape:export-xdpi="90"
-     inkscape:export-ydpi="90" />
   <g
-     id="g3876"
-     transform="translate(-42.928644,3.9604744)"
-     inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/catR.png"
+     id="g3083"
+     transform="matrix(-1,0,0,1,48.848816,0)"
      inkscape:export-xdpi="90"
-     inkscape:export-ydpi="90">
+     inkscape:export-ydpi="90"
+     inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/cat_L_yellow.png">
+    <rect
+       transform="scale(-1,1)"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/cat_L_orange.png"
+       y="-0.20436838"
+       x="-48.424408"
+       height="48"
+       width="48"
+       id="rect3101-7"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none" />
     <path
-       sodipodi:nodetypes="ccccccccsccccccccccccccsccccccc"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/cat_R_yellow.png"
+       sodipodi:nodetypes="cccccsccccccccccccccsccccczc"
        inkscape:connector-curvature="0"
+       style="fill:#ffcc00;stroke:none"
+       d="m 8.478347,12.861498 -0.077,6.047922 c 0.069,2.023222 0.22515,4.01088 0.53931,5.932358 0.30582,1.689734 0.58475,2.334145 1.27121,3.452828 0.41049,0.784578 1.136179,1.513066 1.964619,2.272788 0.7077,-0.137353 1.31673,-0.643797 2.93079,-0.770437 4.55716,-0.357562 13.71376,0 13.71376,0 l 0,8.180755 c 0,0 -0.20431,0.144555 -0.26965,0.192609 l 0,8.937054 -2.58097,0 -2.3113,0 -2.58096,0 0,-4.738178 c -1.62799,0.404772 -3.3756,0.359842 -5.04636,0.154087 l 0,4.545571 -4.89227,0 -2.426869,0 0,-6.66427 c -0.0395,-0.03802 -0.0773,-0.0759 -0.11557,-0.115565 -1.20102,-1.244761 -1.34826,-2.060548 -1.34826,-5.007834 0,-0.141449 0.028,-0.253656 0.0385,-0.385218 -1.04043,-0.958537 -2.06794,-2.075531 -2.92766,-3.505484 -1.08666,-1.979057 -1.54981,-4.020983 -1.81052,-5.855314 -0.35148,-2.21904 -0.50986,-4.419006 -0.57783,-6.587228 l 0.077,-6.240531 c 0,0 -0.569003,-4.528383 3.215015,-4.486411 3.784018,0.04197 3.215015,4.640498 3.215015,4.640498 z"
+       id="path3032" />
+    <path
+       sodipodi:nodetypes="zzacz"
+       inkscape:connector-curvature="0"
+       id="path3034"
+       d="m 16.997685,38.895246 c 2.436382,0 4.080959,1.119053 4.080959,2.426614 0,1.307561 -2.370808,1.005026 -3.610662,0.925081 -1.644021,-0.106005 -4.601655,-0.527837 -4.59049,-1.831336 0.992936,-0.850372 1.683811,-1.520359 4.120193,-1.520359 z"
+       style="fill:#e3dbdb;fill-opacity:0.50196078;fill-rule:nonzero;stroke:none"
+       inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/cat_L_orange.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/cat_L_orange.png"
+       id="path3020"
+       d="m 8.478347,12.861498 -0.077,6.047922 c 0.069,2.023222 0.22515,4.01088 0.53931,5.932358 0.30582,1.689734 0.58475,2.334145 1.27121,3.452828 0.41049,0.784578 1.136179,1.513066 1.964619,2.272788 0.7077,-0.137353 1.31673,-0.643797 2.93079,-0.770437 4.55716,-0.357562 13.71376,0 13.71376,0 l 0,8.180755 c 0,0 -0.20431,0.144555 -0.26965,0.192609 l 0,8.937054 -2.58097,0 -2.3113,0 -2.58096,0 0,-4.738178 c -1.62799,0.404772 -3.3756,0.359842 -5.04636,0.154087 l 0,4.545571 -4.89227,0 -2.426869,0 0,-6.66427 c -0.0395,-0.03802 -0.0773,-0.0759 -0.11557,-0.115565 -1.20102,-1.244761 -1.34826,-2.060548 -1.34826,-5.007834 0,-0.141449 0.028,-0.253656 0.0385,-0.385218 -1.04043,-0.958537 -2.06794,-2.075531 -2.92766,-3.505484 -1.08666,-1.979057 -1.54981,-4.020983 -1.81052,-5.855314 -0.35148,-2.21904 -0.50986,-4.419006 -0.57783,-6.587228 l 0.077,-6.240531 c 0,0 -0.569003,-4.528383 3.215015,-4.486411 3.784018,0.04197 3.215015,4.640498 3.215015,4.640498 z"
        style="fill:none;stroke:#241c1c;stroke-width:1.23269761;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
-       d="m 88.496423,7.360156 c -0.67275,0.02654 -1.00157,0.03852 -1.00157,0.03852 0,0 -2.32884,0.01171 -3.00157,0.03852 -0.68022,0.03936 -1.20419,0.686866 -1.19417,1.463828 l 0.077,6.047922 c -0.069,2.023222 -0.22515,4.01088 -0.53931,5.932358 -0.30582,1.689734 -0.58475,3.23428 -1.27121,4.352963 -0.41049,0.784578 -1.136179,1.513066 -1.964619,2.272787 -0.7077,-0.137353 -1.31673,-0.643796 -2.93079,-0.770436 -4.55716,-0.357562 -13.71376,0 -13.71376,0 l 0,7.28062 c 0,0 0.20431,0.144555 0.26965,0.192609 l 0,8.937054 2.58097,0 2.3113,0 2.58096,0 0,-4.738178 c 1.62799,0.404772 3.3756,0.359842 5.04636,0.154087 l 0,4.545571 4.89227,0 2.426869,0 0,-6.66427 c 0.0395,-0.03802 0.0773,-0.0759 0.11557,-0.115565 1.20102,-1.244761 1.34826,-2.060548 1.34826,-5.007834 0,-0.141449 -0.028,-0.253656 -0.0385,-0.385218 1.04043,-0.958537 2.06794,-2.075531 2.92766,-3.505484 1.08666,-1.979057 1.54981,-4.020983 1.81052,-5.855314 0.35148,-2.21904 0.50986,-4.419006 0.57783,-6.587228 l -0.077,-6.240531 c -0.0103,-0.799994 -0.55215,-1.401463 -1.23269,-1.386785 z"
-       id="path3028" />
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccsccccccccccccccsccccczc" />
     <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/cat_L_orange.png"
+       style="fill:none;stroke:#241c1c;stroke-width:1.23000002;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 25.942794,41.215931 0,5.83525"
+       id="path3022"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/cat_L_orange.png"
+       style="fill:none;stroke:#241c1c;stroke-width:1.23000002;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 21.075689,40.627266 0,4.281594"
+       id="path3024"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/cat_L_orange.png"
+       style="fill:none;stroke:#241c1c;stroke-width:1.23000002;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 13.49246,47.036795 0,-5.53525 c 0,0 1.451377,0.900251 2.459804,0.998824"
+       id="path3026"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/cat_L_orange.png"
+       id="path4148"
+       sodipodi:nodetypes="cccc"
+       inkscape:connector-curvature="0"
+       d="m 40.2031,11.59444 c 0,0 0.167917,-7.500056 -2.448341,-10.18105 -3.311711,-0.794111 -6.633941,7.770007 -6.633941,7.770007 z"
+       style="fill:#916f6f;stroke:none" />
+    <path
+       style="fill:#ffcc00;stroke:#241c1c;stroke-width:1.23269761px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 40.2031,11.59444 c 0,0 0.167917,-7.500056 -2.448341,-10.18105 -3.311711,-0.794111 -6.633941,7.770007 -6.633941,7.770007 z"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       id="path3062"
+       inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/cat_R_yellow.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/cat_R_yellow.png"
+       id="path4150"
+       sodipodi:nodetypes="cczzcssssc"
+       inkscape:connector-curvature="0"
+       d="m 29.078858,9.012872 c 0,0 -1.21461,-8.342369 -4.41134,-8.534983 -6.34005,3.30961 -10.98803,13.917334 -10.35706,22.823886 0.63097,8.906552 7.23952,14.287609 16.11098,14.768397 C 39.292897,38.55096 47.008701,32.353769 46.881753,23.142284 46.690463,19.303158 45.29013,15.516863 43.175959,13.52011 41.645313,12.074474 39.700903,11.03955 37.709735,10.355453 35.054668,9.443266 32.170408,9.063926 29.366558,9.20467 c -2.03652,0.102227 -4.07108,0.63625 -5.94572,1.43848 -0.97824,0.418625 -2.68516,1.726176 -2.68516,1.726176"
+       style="fill:#ffcc00;stroke:none" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/cat_L_orange.png"
+       style="fill:#e3dbdb;fill-opacity:0.50196078;fill-rule:nonzero;stroke:none"
+       d="m 35.442818,23.249345 c 5.614112,0 9.858567,2.191136 9.858567,4.892268 0,1.865154 -2.013431,3.489537 -5.204985,4.314442 -0.72791,1.755393 -2.405359,3.0047 -4.391485,3.0047 -1.909167,0 -3.543017,-1.164747 -4.314437,-2.812091 -0.003,-0.0054 -0.036,0.0054 -0.0385,0 -3.64847,-0.742469 -6.0789,-2.481201 -6.0789,-4.507051 0,-2.701132 4.55564,-4.892268 10.16976,-4.892268 z"
+       id="path4462"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cscsccssc" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/cat_L_orange.png"
+       transform="matrix(-0.83577238,0,0,1.256973,89.328052,-54.810601)"
+       d="m 62.547813,58.34684 c 0,2.363098 -2.089822,4.278768 -4.667747,4.278768 -2.577926,0 -4.667747,-1.91567 -4.667747,-4.278768 0,-2.363098 2.089821,-4.278768 4.667747,-4.278768 2.577925,0 4.667747,1.91567 4.667747,4.278768 z"
+       sodipodi:ry="4.2787681"
+       sodipodi:rx="4.667747"
+       sodipodi:cy="58.34684"
+       sodipodi:cx="57.880066"
+       id="path4152"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#241c1c;stroke-width:1.20267856;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       sodipodi:type="arc" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/cat_L_orange.png"
+       d="m 62.547813,58.34684 c 0,2.363098 -2.089822,4.278768 -4.667747,4.278768 -2.577926,0 -4.667747,-1.91567 -4.667747,-4.278768 0,-2.363098 2.089821,-4.278768 4.667747,-4.278768 2.577925,0 4.667747,1.91567 4.667747,4.278768 z"
+       sodipodi:ry="4.2787681"
+       sodipodi:rx="4.667747"
+       sodipodi:cy="58.34684"
+       sodipodi:cx="57.880066"
+       id="path4152-5"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#241c1c;stroke-width:1.20267856;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       sodipodi:type="arc"
+       transform="matrix(-0.83577238,0,0,1.256973,77.731638,-54.810601)" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/cat_L_orange.png"
+       sodipodi:nodetypes="czczc"
+       inkscape:connector-curvature="0"
+       id="path4174"
+       d="m 39.012731,23.92525 c 0,0 0.542483,-1.220591 -3.458343,-1.220591 -4.00082,0 -3.45834,1.220591 -3.45834,1.220591 0,0 1.70398,4.043205 3.957229,3.933014 2.253245,-0.110191 2.959454,-3.933014 2.959454,-3.933014 z"
+       style="fill:#d35f5f;stroke:#241c1c;stroke-width:1.23269761px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/cat_L_orange.png"
+       sodipodi:type="arc"
+       style="fill:#44aa00;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path4327"
+       sodipodi:cx="57.880066"
+       sodipodi:cy="58.34684"
+       sodipodi:rx="4.667747"
+       sodipodi:ry="4.2787681"
+       d="m 62.547813,58.34684 c 0,2.363098 -2.089822,4.278768 -4.667747,4.278768 -2.577926,0 -4.667747,-1.91567 -4.667747,-4.278768 0,-2.363098 2.089821,-4.278768 4.667747,-4.278768 2.577925,0 4.667747,1.91567 4.667747,4.278768 z"
+       transform="matrix(-0.64609591,0,0,0.97170609,67.022265,-37.750163)" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/cat_L_orange.png"
+       sodipodi:nodetypes="cccc"
+       inkscape:connector-curvature="0"
+       id="path4329"
+       d="m 26.566448,18.945817 4.21252,0 -4.21252,-1.285403 z"
+       style="fill:#ffffff;fill-opacity:0.50196078;stroke:none" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/cat_L_orange.png"
+       sodipodi:nodetypes="cccc"
+       inkscape:connector-curvature="0"
+       id="path4331"
+       d="m 26.566448,18.945817 4.21252,0 -4.21252,1.285403 z"
+       style="fill:#ffffff;fill-opacity:0.29411765;stroke:none" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/cat_L_orange.png"
+       transform="matrix(-0.5008211,0,0,0.75321777,59.088424,-24.934248)"
+       d="m 62.547813,58.34684 c 0,2.363098 -2.089822,4.278768 -4.667747,4.278768 -2.577926,0 -4.667747,-1.91567 -4.667747,-4.278768 0,-2.363098 2.089821,-4.278768 4.667747,-4.278768 2.577925,0 4.667747,1.91567 4.667747,4.278768 z"
+       sodipodi:ry="4.2787681"
+       sodipodi:rx="4.667747"
+       sodipodi:cy="58.34684"
+       sodipodi:cx="57.880066"
+       id="path4333"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       sodipodi:type="arc" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/cat_L_orange.png"
+       transform="matrix(-0.97670617,-0.44163125,-0.3914877,0.86580932,115.92777,-7.508179)"
+       d="m 64.966728,61.697472 c 0,0.729147 -0.283231,1.320238 -0.632614,1.320238 -0.349383,0 -0.632614,-0.591091 -0.632614,-1.320238 0,-0.729148 0.283231,-1.320239 0.632614,-1.320239 0.349383,0 0.632614,0.591091 0.632614,1.320239 z"
+       sodipodi:ry="1.3202382"
+       sodipodi:rx="0.6326142"
+       sodipodi:cy="61.697472"
+       sodipodi:cx="64.334114"
+       id="path4335"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       sodipodi:type="arc" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/cat_L_orange.png"
+       transform="matrix(-1.071911,0,0,0.56885802,98.428787,-14.640396)"
+       d="m 64.966728,61.697472 c 0,0.729147 -0.283231,1.320238 -0.632614,1.320238 -0.349383,0 -0.632614,-0.591091 -0.632614,-1.320238 0,-0.729148 0.283231,-1.320239 0.632614,-1.320239 0.349383,0 0.632614,0.591091 0.632614,1.320239 z"
+       sodipodi:ry="1.3202382"
+       sodipodi:rx="0.6326142"
+       sodipodi:cy="61.697472"
+       sodipodi:cx="64.334114"
+       id="path4337"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       sodipodi:type="arc" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/cat_L_orange.png"
+       transform="matrix(-0.64609591,0,0,0.97170609,78.61868,-37.750163)"
+       d="m 62.547813,58.34684 c 0,2.363098 -2.089822,4.278768 -4.667747,4.278768 -2.577926,0 -4.667747,-1.91567 -4.667747,-4.278768 0,-2.363098 2.089821,-4.278768 4.667747,-4.278768 2.577925,0 4.667747,1.91567 4.667747,4.278768 z"
+       sodipodi:ry="4.2787681"
+       sodipodi:rx="4.667747"
+       sodipodi:cy="58.34684"
+       sodipodi:cx="57.880066"
+       id="path4450"
+       style="fill:#44aa00;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       sodipodi:type="arc" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/cat_L_orange.png"
+       style="fill:#ffffff;fill-opacity:0.50196078;stroke:none"
+       d="m 38.162858,18.945817 4.212528,0 -4.212528,-1.285403 z"
+       id="path4452"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/cat_L_orange.png"
+       style="fill:#ffffff;fill-opacity:0.29411765;stroke:none"
+       d="m 38.162858,18.945817 4.212528,0 -4.212528,1.285403 z"
+       id="path4454"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/cat_L_orange.png"
+       sodipodi:type="arc"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path4456"
+       sodipodi:cx="57.880066"
+       sodipodi:cy="58.34684"
+       sodipodi:rx="4.667747"
+       sodipodi:ry="4.2787681"
+       d="m 62.547813,58.34684 c 0,2.363098 -2.089822,4.278768 -4.667747,4.278768 -2.577926,0 -4.667747,-1.91567 -4.667747,-4.278768 0,-2.363098 2.089821,-4.278768 4.667747,-4.278768 2.577925,0 4.667747,1.91567 4.667747,4.278768 z"
+       transform="matrix(-0.5008211,0,0,0.75321777,70.684839,-24.934248)" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/cat_L_orange.png"
+       sodipodi:type="arc"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path4458"
+       sodipodi:cx="64.334114"
+       sodipodi:cy="61.697472"
+       sodipodi:rx="0.6326142"
+       sodipodi:ry="1.3202382"
+       d="m 64.966728,61.697472 c 0,0.729147 -0.283231,1.320238 -0.632614,1.320238 -0.349383,0 -0.632614,-0.591091 -0.632614,-1.320238 0,-0.729148 0.283231,-1.320239 0.632614,-1.320239 0.349383,0 0.632614,0.591091 0.632614,1.320239 z"
+       transform="matrix(-0.97670617,-0.44163125,-0.3914877,0.86580932,127.52418,-7.508179)" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/cat_L_orange.png"
+       sodipodi:type="arc"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path4460"
+       sodipodi:cx="64.334114"
+       sodipodi:cy="61.697472"
+       sodipodi:rx="0.6326142"
+       sodipodi:ry="1.3202382"
+       d="m 64.966728,61.697472 c 0,0.729147 -0.283231,1.320238 -0.632614,1.320238 -0.349383,0 -0.632614,-0.591091 -0.632614,-1.320238 0,-0.729148 0.283231,-1.320239 0.632614,-1.320239 0.349383,0 0.632614,0.591091 0.632614,1.320239 z"
+       transform="matrix(-1.071911,0,0,0.56885802,110.0252,-14.640396)" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/cat_L_orange.png"
+       inkscape:connector-curvature="0"
+       id="path4036"
+       d="m 29.037993,26.638307 c -5.91248,-2.489465 -5.91248,-2.645057 -5.91248,-2.645057"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/cat_L_orange.png"
+       inkscape:connector-curvature="0"
+       id="path4038"
+       d="m 28.882403,28.544303 -5.6013,0"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/cat_L_orange.png"
+       inkscape:connector-curvature="0"
+       id="path4036-2"
+       d="m 29.037993,30.4503 c -5.91248,2.489465 -5.91248,2.645057 -5.91248,2.645057"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/cat_L_orange.png"
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
-       id="path3046"
-       d="m 65.834666,37.255457 0,5.83525"
-       style="fill:none;stroke:#241c1c;stroke-width:1.23000002;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+       id="path4071"
+       d="m 36.121178,28.225498 0.0389,2.836111"
+       style="fill:none;stroke:#241c1c;stroke-width:1.23000002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
     <path
-       sodipodi:nodetypes="cc"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/cat_L_orange.png"
+       sodipodi:nodetypes="czcsc"
        inkscape:connector-curvature="0"
-       id="path3046-3"
-       d="m 70.701771,36.666792 0,4.281594"
-       style="fill:none;stroke:#241c1c;stroke-width:1.23000002;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+       id="path4073"
+       d="m 32.380508,31.251044 c 0,0 1.04736,1.801312 1.89784,1.760318 0.85048,-0.04099 1.89784,-1.760318 1.89784,-1.760318 0,0 0.964293,1.760318 1.897842,1.760318 0.829823,0 1.897843,-1.760318 1.897843,-1.760318"
+       style="fill:none;stroke:#241c1c;stroke-width:1.23000002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
     <path
-       sodipodi:nodetypes="ccc"
+       style="fill:none;stroke:#241c1c;stroke-width:1.23269761px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 29.078858,9.012872 c 0,0 -1.21461,-8.342369 -4.41134,-8.534983 -6.34005,3.30961 -10.98803,13.917334 -10.35706,22.823886 0.63097,8.906552 7.23952,14.287609 16.11098,14.768397 C 39.292897,38.55096 47.008701,32.353769 46.881753,23.142284 46.690463,19.303158 45.29013,15.516863 43.175959,13.52011 41.645313,12.074474 39.700903,11.03955 37.709735,10.355453 35.054668,9.443266 32.170408,9.063926 29.366558,9.20467 c -2.03652,0.102227 -4.07108,0.63625 -5.94572,1.43848 -0.97824,0.418625 -2.68516,1.726176 -2.68516,1.726176"
        inkscape:connector-curvature="0"
-       id="path3046-31"
-       d="m 78.285,43.076321 0,-5.53525 c 0,0 -1.451377,0.900251 -2.459804,0.998824"
-       style="fill:none;stroke:#241c1c;stroke-width:1.23000002;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+       sodipodi:nodetypes="cczzcssssc"
+       id="path3856"
+       inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/cat_L_orange.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
   </g>
-  <path
-     style="fill:#916f6f;stroke:#241c1c;stroke-width:1.23269761000000000px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     d="m 8.645716,11.59444 c 0,0 -0.167917,-7.500056 2.448341,-10.18105 3.311711,-0.794111 6.633941,7.770007 6.633941,7.770007 z"
-     inkscape:connector-curvature="0"
-     sodipodi:nodetypes="cccc"
-     id="path4148"
-     inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/catR.png"
-     inkscape:export-xdpi="90"
-     inkscape:export-ydpi="90" />
-  <path
-     style="fill:#916f6f;stroke:#241c1c;stroke-width:1.23269761000000000px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     d="m 19.769958,9.012872 c 0,0 1.21461,-8.342369 4.41134,-8.534983 6.34005,3.30961 10.98803,13.917334 10.35706,22.823886 -0.63097,8.906552 -7.23952,14.287609 -16.11098,14.768397 C 9.555919,38.55096 1.840115,32.353769 1.967063,23.142284 c 0.19129,-3.839126 1.591623,-7.625421 3.705794,-9.622174 1.530646,-1.445636 3.475056,-2.48056 5.466224,-3.164657 2.655067,-0.912187 5.539327,-1.291527 8.343177,-1.150783 2.03652,0.102227 4.07108,0.63625 5.94572,1.43848 0.97824,0.418625 2.68516,1.726176 2.68516,1.726176"
-     inkscape:connector-curvature="0"
-     sodipodi:nodetypes="cczzcssssc"
-     id="path4150"
-     inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/catR.png"
-     inkscape:export-xdpi="90"
-     inkscape:export-ydpi="90" />
-  <path
-     sodipodi:nodetypes="cscsccssc"
-     inkscape:connector-curvature="0"
-     id="path4462"
-     d="m 13.405998,23.249345 c -5.614112,0 -9.858567,2.191136 -9.858567,4.892268 0,1.865154 2.013431,3.489537 5.204985,4.314442 0.72791,1.755393 2.405359,3.0047 4.391485,3.0047 1.909167,0 3.543017,-1.164747 4.314437,-2.812091 0.003,-0.0054 0.036,0.0054 0.0385,0 3.64847,-0.742469 6.0789,-2.481201 6.0789,-4.507051 0,-2.701132 -4.55564,-4.892268 -10.16976,-4.892268 z"
-     style="fill:#e3dbdb;fill-opacity:0.50196078;fill-rule:nonzero;stroke:none"
-     inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/catR.png"
-     inkscape:export-xdpi="90"
-     inkscape:export-ydpi="90" />
-  <path
-     sodipodi:type="arc"
-     style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#241c1c;stroke-width:1.20267856;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-     id="path4152"
-     sodipodi:cx="57.880066"
-     sodipodi:cy="58.34684"
-     sodipodi:rx="4.667747"
-     sodipodi:ry="4.2787681"
-     d="m 62.547813,58.34684 a 4.667747,4.2787681 0 1 1 -9.335494,0 4.667747,4.2787681 0 1 1 9.335494,0 z"
-     transform="matrix(0.83577238,0,0,1.256973,-40.479236,-54.810601)"
-     inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/catR.png"
-     inkscape:export-xdpi="90"
-     inkscape:export-ydpi="90" />
-  <path
-     transform="matrix(0.83577238,0,0,1.256973,-28.882822,-54.810601)"
-     sodipodi:type="arc"
-     style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#241c1c;stroke-width:1.20267856;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-     id="path4152-5"
-     sodipodi:cx="57.880066"
-     sodipodi:cy="58.34684"
-     sodipodi:rx="4.667747"
-     sodipodi:ry="4.2787681"
-     d="m 62.547813,58.34684 a 4.667747,4.2787681 0 1 1 -9.335494,0 4.667747,4.2787681 0 1 1 9.335494,0 z"
-     inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/catR.png"
-     inkscape:export-xdpi="90"
-     inkscape:export-ydpi="90" />
-  <path
-     style="fill:#d35f5f;stroke:#241c1c;stroke-width:1.23269761px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
-     d="m 9.836085,23.92525 c 0,0 -0.542483,-1.220591 3.458343,-1.220591 4.00082,0 3.45834,1.220591 3.45834,1.220591 0,0 -1.70398,4.043205 -3.957229,3.933014 C 10.542294,27.748073 9.836085,23.92525 9.836085,23.92525 z"
-     id="path4174"
-     inkscape:connector-curvature="0"
-     sodipodi:nodetypes="czczc"
-     inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/catR.png"
-     inkscape:export-xdpi="90"
-     inkscape:export-ydpi="90" />
-  <path
-     transform="matrix(0.64609591,0,0,0.97170609,-18.173449,-37.750163)"
-     d="m 62.547813,58.34684 a 4.667747,4.2787681 0 1 1 -9.335494,0 4.667747,4.2787681 0 1 1 9.335494,0 z"
-     sodipodi:ry="4.2787681"
-     sodipodi:rx="4.667747"
-     sodipodi:cy="58.34684"
-     sodipodi:cx="57.880066"
-     id="path4327"
-     style="fill:#44aa00;fill-opacity:1;fill-rule:nonzero;stroke:none"
-     sodipodi:type="arc"
-     inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/catR.png"
-     inkscape:export-xdpi="90"
-     inkscape:export-ydpi="90" />
-  <path
-     style="fill:#ffffff;fill-opacity:0.50196078;stroke:none"
-     d="m 22.282368,18.945817 -4.21252,0 4.21252,-1.285403 z"
-     id="path4329"
-     inkscape:connector-curvature="0"
-     sodipodi:nodetypes="cccc"
-     inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/catR.png"
-     inkscape:export-xdpi="90"
-     inkscape:export-ydpi="90" />
-  <path
-     style="fill:#ffffff;fill-opacity:0.29411765;stroke:none"
-     d="m 22.282368,18.945817 -4.21252,0 4.21252,1.285403 z"
-     id="path4331"
-     inkscape:connector-curvature="0"
-     sodipodi:nodetypes="cccc"
-     inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/catR.png"
-     inkscape:export-xdpi="90"
-     inkscape:export-ydpi="90" />
-  <path
-     sodipodi:type="arc"
-     style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-     id="path4333"
-     sodipodi:cx="57.880066"
-     sodipodi:cy="58.34684"
-     sodipodi:rx="4.667747"
-     sodipodi:ry="4.2787681"
-     d="m 62.547813,58.34684 a 4.667747,4.2787681 0 1 1 -9.335494,0 4.667747,4.2787681 0 1 1 9.335494,0 z"
-     transform="matrix(0.5008211,0,0,0.75321777,-10.239608,-24.934248)"
-     inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/catR.png"
-     inkscape:export-xdpi="90"
-     inkscape:export-ydpi="90" />
-  <path
-     sodipodi:type="arc"
-     style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-     id="path4335"
-     sodipodi:cx="64.334114"
-     sodipodi:cy="61.697472"
-     sodipodi:rx="0.6326142"
-     sodipodi:ry="1.3202382"
-     d="m 64.966728,61.697472 a 0.6326142,1.3202382 0 1 1 -1.265228,0 0.6326142,1.3202382 0 1 1 1.265228,0 z"
-     transform="matrix(0.97670617,-0.44163125,0.3914877,0.86580932,-67.078954,-7.508179)"
-     inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/catR.png"
-     inkscape:export-xdpi="90"
-     inkscape:export-ydpi="90" />
-  <path
-     sodipodi:type="arc"
-     style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-     id="path4337"
-     sodipodi:cx="64.334114"
-     sodipodi:cy="61.697472"
-     sodipodi:rx="0.6326142"
-     sodipodi:ry="1.3202382"
-     d="m 64.966728,61.697472 a 0.6326142,1.3202382 0 1 1 -1.265228,0 0.6326142,1.3202382 0 1 1 1.265228,0 z"
-     transform="matrix(1.071911,0,0,0.56885802,-49.579971,-14.640396)"
-     inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/catR.png"
-     inkscape:export-xdpi="90"
-     inkscape:export-ydpi="90" />
-  <path
-     sodipodi:type="arc"
-     style="fill:#44aa00;fill-opacity:1;fill-rule:nonzero;stroke:none"
-     id="path4450"
-     sodipodi:cx="57.880066"
-     sodipodi:cy="58.34684"
-     sodipodi:rx="4.667747"
-     sodipodi:ry="4.2787681"
-     d="m 62.547813,58.34684 a 4.667747,4.2787681 0 1 1 -9.335494,0 4.667747,4.2787681 0 1 1 9.335494,0 z"
-     transform="matrix(0.64609591,0,0,0.97170609,-29.769864,-37.750163)"
-     inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/catR.png"
-     inkscape:export-xdpi="90"
-     inkscape:export-ydpi="90" />
-  <path
-     sodipodi:nodetypes="cccc"
-     inkscape:connector-curvature="0"
-     id="path4452"
-     d="m 10.685958,18.945817 -4.212528,0 4.212528,-1.285403 z"
-     style="fill:#ffffff;fill-opacity:0.50196078;stroke:none"
-     inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/catR.png"
-     inkscape:export-xdpi="90"
-     inkscape:export-ydpi="90" />
-  <path
-     sodipodi:nodetypes="cccc"
-     inkscape:connector-curvature="0"
-     id="path4454"
-     d="m 10.685958,18.945817 -4.212528,0 4.212528,1.285403 z"
-     style="fill:#ffffff;fill-opacity:0.29411765;stroke:none"
-     inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/catR.png"
-     inkscape:export-xdpi="90"
-     inkscape:export-ydpi="90" />
-  <path
-     transform="matrix(0.5008211,0,0,0.75321777,-21.836023,-24.934248)"
-     d="m 62.547813,58.34684 a 4.667747,4.2787681 0 1 1 -9.335494,0 4.667747,4.2787681 0 1 1 9.335494,0 z"
-     sodipodi:ry="4.2787681"
-     sodipodi:rx="4.667747"
-     sodipodi:cy="58.34684"
-     sodipodi:cx="57.880066"
-     id="path4456"
-     style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-     sodipodi:type="arc"
-     inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/catR.png"
-     inkscape:export-xdpi="90"
-     inkscape:export-ydpi="90" />
-  <path
-     transform="matrix(0.97670617,-0.44163125,0.3914877,0.86580932,-78.675364,-7.508179)"
-     d="m 64.966728,61.697472 a 0.6326142,1.3202382 0 1 1 -1.265228,0 0.6326142,1.3202382 0 1 1 1.265228,0 z"
-     sodipodi:ry="1.3202382"
-     sodipodi:rx="0.6326142"
-     sodipodi:cy="61.697472"
-     sodipodi:cx="64.334114"
-     id="path4458"
-     style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-     sodipodi:type="arc"
-     inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/catR.png"
-     inkscape:export-xdpi="90"
-     inkscape:export-ydpi="90" />
-  <path
-     transform="matrix(1.071911,0,0,0.56885802,-61.176384,-14.640396)"
-     d="m 64.966728,61.697472 a 0.6326142,1.3202382 0 1 1 -1.265228,0 0.6326142,1.3202382 0 1 1 1.265228,0 z"
-     sodipodi:ry="1.3202382"
-     sodipodi:rx="0.6326142"
-     sodipodi:cy="61.697472"
-     sodipodi:cx="64.334114"
-     id="path4460"
-     style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-     sodipodi:type="arc"
-     inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/catR.png"
-     inkscape:export-xdpi="90"
-     inkscape:export-ydpi="90" />
-  <path
-     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     d="m 19.810823,26.638307 c 5.91248,-2.489465 5.91248,-2.645057 5.91248,-2.645057"
-     id="path4036"
-     inkscape:connector-curvature="0"
-     inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/catR.png"
-     inkscape:export-xdpi="90"
-     inkscape:export-ydpi="90" />
-  <path
-     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     d="m 19.966413,28.544303 5.6013,0"
-     id="path4038"
-     inkscape:connector-curvature="0"
-     inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/catR.png"
-     inkscape:export-xdpi="90"
-     inkscape:export-ydpi="90" />
-  <path
-     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     d="m 19.810823,30.4503 c 5.91248,2.489465 5.91248,2.645057 5.91248,2.645057"
-     id="path4036-2"
-     inkscape:connector-curvature="0"
-     inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/catR.png"
-     inkscape:export-xdpi="90"
-     inkscape:export-ydpi="90" />
-  <path
-     style="fill:none;stroke:#241c1c;stroke-width:1.23000002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-     d="m 12.727638,28.225498 -0.0389,2.836111"
-     id="path4071"
-     inkscape:connector-curvature="0"
-     sodipodi:nodetypes="cc"
-     inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/catR.png"
-     inkscape:export-xdpi="90"
-     inkscape:export-ydpi="90" />
-  <path
-     style="fill:none;stroke:#241c1c;stroke-width:1.23000002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-     d="m 16.468308,31.251044 c 0,0 -1.04736,1.801312 -1.89784,1.760318 -0.85048,-0.04099 -1.89784,-1.760318 -1.89784,-1.760318 0,0 -0.964293,1.760318 -1.897842,1.760318 -0.829823,0 -1.897843,-1.760318 -1.897843,-1.760318"
-     id="path4073"
-     inkscape:connector-curvature="0"
-     sodipodi:nodetypes="czcsc"
-     inkscape:export-filename="/home/patricia/Julien/catsmen/img/cats/catR.png"
-     inkscape:export-xdpi="90"
-     inkscape:export-ydpi="90" />
 </svg>

@@ -60,7 +60,7 @@ class CatSprite(pygame.sprite.Sprite):
 class Grid():
   """ class Grid: al boxes and cats evolve on a grid made of nb_rows * nb_cols cells,
   the player can only move one column (up or down) at a time """
-  def __init__(self,nb_rows=10,nb_cols=16,cell_size_px=48,nb_cats=5,x0=48,y0=96):
+  def __init__(self, nb_rows=10, nb_cols=16, cell_size_px=48, nb_cats=5, x0=48, y0=96):
     """
     nb_rows: number of rows
     nb_cols: number of columns
@@ -97,7 +97,7 @@ class Grid():
                           'box_48px_009.png',
                           'box_48px_010.png']
     self.cat_path = 'img/cats/'
-    self.cat_filenames = ['catL.png', 'catR.png']
+    self.cat_filenames = [const.SPRITE_P1,const.SPRITE_P2]
     self.cursor_path = 'img/cursor/'
     self.cursor_filenames = ['arrow_blue.png','arrow_red.png']
     self.create_sprites()
@@ -277,7 +277,7 @@ class Grid():
 
 
 class ScoreItem(pygame.font.Font):
-    def __init__(self, text, font=None, font_size=30,
+    def __init__(self, text, font=const.FONT, font_size=30,
                  font_color=const.WHITE, (pos_x, pos_y)=(0, 0)):
 
         pygame.font.Font.__init__(self, font, font_size)
@@ -371,13 +371,13 @@ class Game(el.EventLoop):
   def get_winner(self):
     """ find the winner """
     if self.score_p1 == self.nb and self.score_p2 == self.nb:
-      return 'eq'
+      return 1
     elif self.score_p1 == self.nb:
       return self.name_p1
     elif self.score_p2 == self.nb:
       return self.name_p2
     else:
-      return 'no one'
+      return 0
 
 
 
@@ -385,12 +385,12 @@ class Game(el.EventLoop):
     """ change player """
     if self.current_player:
         ## current player is P2, one shall put the cursot to the most left P2 cat
-        self.current_col_id = 0
         self.current_player = 0
+        self.current_col_id = -1
     else:
         ## current player is P1, one shall put the cursor to the most right P1 cat
-        self.current_col_id = -1
         self.current_player = 1
+        self.current_col_id = 0
 
     self.cols = self.get_authorized_cols()
     self.grid.current_cursor.add(self.grid.cursors[self.current_player])
@@ -511,52 +511,53 @@ class Game(el.EventLoop):
 
 
   def run(self):
-    while self.loop:
+        while self.loop:
 
-      # Limit frame speed to 50 FPS
-      self.clock.tick(30)
+            # Limit frame speed to 50 FPS
+            self.clock.tick(30)
 
-      # --- Main event loop
-      for event in pygame.event.get(): # User did something
-        if event.type == pygame.QUIT: # If user clicked close
-          pygame.quit()
-        elif event.type == pygame.KEYDOWN:
-          if event.key == pygame.K_LEFT:
-            self.current_col_id = (self.current_col_id - 1) % len(self.get_authorized_cols())
-            self.update_cursor()
-            self.draw()
-          if event.key == pygame.K_RIGHT:
-            self.current_col_id = (self.current_col_id + 1) % len(self.get_authorized_cols())
-            self.update_cursor()
-            self.draw()
-          if event.key == pygame.K_UP:
-            # play sound
-            pygame.mixer.music.play(0)
-            # update + affichage
-            col = self.get_authorized_cols()[self.current_col_id]
-            self.grid.up(col)
-            self.last_col = col
-            self.draw()
-            self.update_cats()
-            self.update_score()
-            # change player
-            self.change_player()
-            self.draw()
-          if event.key == pygame.K_DOWN:
-            # play sound
-            pygame.mixer.music.play(0)
-            # update + affichage
-            col = self.get_authorized_cols()[self.current_col_id]
-            self.grid.down(col)
-            self.last_col = col
-            self.draw()
-            self.update_cats()
-            self.update_score()
-            # change player
-            self.change_player()
-            self.draw()
+            # --- Main event loop
+            for event in pygame.event.get(): # User did something
+                if event.type == pygame.QUIT: # If user clicked close
+                    pygame.quit()
+                elif event.type == pygame.KEYDOWN:
+                    if event.key == pygame.K_ESCAPE:
+                        self.loop = False
 
-      # --- Game logic should go here
-      # --- Drawing code should go here
+                    elif event.key == pygame.K_LEFT:
+                        self.current_col_id = (self.current_col_id - 1) % len(self.get_authorized_cols())
+                        self.update_cursor()
 
-      self.loop = self.loop and not self.game_over()
+                    elif event.key == pygame.K_RIGHT:
+                        self.current_col_id = (self.current_col_id + 1) % len(self.get_authorized_cols())
+                        self.update_cursor()
+
+                    elif event.key == pygame.K_UP:
+                        # play sound
+                        pygame.mixer.music.play(0)
+                        # update + affichage
+                        col = self.get_authorized_cols()[self.current_col_id]
+                        self.grid.up(col)
+                        self.last_col = col
+                        self.draw()
+                        self.update_cats()
+                        self.update_score()
+                        # change player
+                        self.change_player()
+
+                    elif event.key == pygame.K_DOWN:
+                        # play sound
+                        pygame.mixer.music.play(0)
+                        # update + affichage
+                        col = self.get_authorized_cols()[self.current_col_id]
+                        self.grid.down(col)
+                        self.last_col = col
+                        self.draw()
+                        self.update_cats()
+                        self.update_score()
+                        # change player
+                        self.change_player()
+
+
+            self.draw()
+            self.loop = self.loop and not self.game_over()
