@@ -1,6 +1,8 @@
 # Catsmen
 Python + pygame clone of the DOS puzzle game MiceMen
 
+![screenshot_game](https://cloud.githubusercontent.com/assets/4519149/10096253/3a748480-6370-11e5-9b99-2104669776e8.png)
+
 ## Install / requirements
 requires python2.7 and the pygame library
 
